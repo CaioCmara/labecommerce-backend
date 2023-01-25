@@ -5,40 +5,40 @@ exports.users = [
     {
         id: "caio",
         email: "caio1801@gmail.com",
-        password: "azulverde"
+        password: "marleydog30"
     },
     {
-        id: "bahia",
-        email: "bahiacity@gmail.com",
-        password: "libertadores"
+        id: "jessica",
+        email: "JessicaBenzano@gmail.com",
+        password: "thorfofo2012"
     }
 ];
 exports.products = [
     {
-        id: "bdn",
-        name: "blusa da nike",
-        price: 130,
-        category: "vestuário",
+        id: "c001",
+        name: "Fiat Mobi",
+        price: 70.000,
+        category: "Hatch",
     },
     {
-        id: "cta",
-        name: "chuteira",
-        price: 321,
-        category: "calçados",
+        id: "c002",
+        name: "Honda Civic 2023",
+        price: 220.000,
+        category: "Sedan",
     }
 ];
 exports.purchases = [
     {
         userId: "caio",
-        productId: "bdn",
-        quantity: 3,
-        totalPrice: 390
+        productId: "c001",
+        quantity: 1,
+        totalPrice: 70.000
     },
     {
-        userId: "bahia",
-        productId: "cta",
-        quantity: 9,
-        totalPrice: 2889
+        userId: "jessica",
+        productId: "c002",
+        quantity: 2,
+        totalPrice: 440.000
     }
 ];
 //# sourceMappingURL=database.js.map
