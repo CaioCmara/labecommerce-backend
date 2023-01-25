@@ -39,3 +39,48 @@ VALUES ("c004", " Toyota Corolla Cross", 159000, "SUV");
 
 INSERT INTO products(id, name, price, category)
 VALUES ("c005", "Peugeot 208 ", 85000, "Hatch");
+
+SELECT * FROM users;
+SELECT * FROM products;
+
+SELECT * FROM products
+WHERE name LIKE "Honda Civic 2023";
+
+INSERT INTO users VALUES ("Nine", "lilika@gmail.com", "port304");
+
+INSERT INTO products VALUES ("c003", "Renault Duster", 102290, "SUV");
+
+SELECT * FROM products
+WHERE id = "c002";
+
+DELETE FROM users
+WHERE id = "";
+
+DELETE FROM products
+WHERE id = "";
+
+-- edit user pelo id 
+
+UPDATE users
+SET email = "rabicorte@gmail.com",
+    password = "vastasrt"
+WHERE id = "Nine";
+
+-- Edit Product by id
+UPDATE products
+SET name = "Honda Civic Novo",
+    price = 200000
+WHERE id = "c002";
+
+-- orderna resultados pela ordem crescente dos emails 
+
+SELECT * FROM users
+ORDER BY email ASC;
+
+SELECT * FROM products
+ORDER BY price ASC
+LIMIT 90000;
+
+SELECT * FROM products
+WHERE price > 40000 AND price < 180000
+ORDER BY price ASC;
