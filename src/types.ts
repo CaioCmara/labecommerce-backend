@@ -1,5 +1,4 @@
 
-
 export type TUser ={
     id: string
     email: string
@@ -10,7 +9,7 @@ export type TProduct ={
     id: string
     name: string
     price: number
-    category: string
+    category: PRODUCT_CATEGORY
 }
 
 export type TPurchase ={
@@ -18,4 +17,12 @@ export type TPurchase ={
     productId: string
     quantity: number
     totalPrice: number
+}
+
+export enum PRODUCT_CATEGORY {
+    HATCH = "Hatch",
+    SUV = "SUV",
+    SEDAN = "Sedã",
+    MINIVAN = "Minivan",
+    SPORTS = "Esportivo"
 }
